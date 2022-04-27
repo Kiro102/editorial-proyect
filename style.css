@@ -35,6 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 
 .cointainer_header {
@@ -45,6 +46,7 @@ body {
 
 .logo_menu {
     margin: 2rem 0 0 2rem;
+    align-self: flex-start;
 
 }
 
@@ -140,10 +142,10 @@ body {
 .header_text p {
     font-family: var(--font-opens-sans);
     color: var(--color-grey);
-    font-size: 1.4rem;
+    font-size: 1.43rem;
     font-weight: 400;
     width: 90%;
-    height: 20%;
+    height: 25%;
     align-self: flex-start;
 
 }
@@ -171,5 +173,81 @@ body {
 
 .btn:hover {
     background-color: #f56a6a18;
+
+}
+
+/* ***Mainn*** */
+.container_main {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+}
+
+.container_main h2 {
+    text-align: left;
+    font-family: var(--font-roboto-slab);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-black);
+    border-bottom: 4px solid var(--color-red);
+    align-self: flex-start;
+    width: 10%;
+}
+
+/* *******SECTION HERO 1**** */
+.hero_1 {
+    display: flex;
+    padding: 3rem 0 0 0;
+    width: 100%;
+    /* border: 2px solid blue; */
+    flex-wrap: wrap;
+    /* height: 100vh; */
+}
+
+/* *******CARD**** */
+.card_hero_1 {
+    display: flex;
+    width: 50%;
+    height: 20rem;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+/* ***ICONO DE LA CARD*** */
+.card_hero_1 span {
+    font-size: 3rem;
+}
+
+.icon_card {
+    font-size: 5.5rem;
+    color: var(--color-red);
+}
+
+/* *****TEXTOS DE LA CARD */
+.text_card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+}
+
+.text_card h3 {
+    font-family: var(--font-roboto-slab);
+    color: var(--color-black);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.text_card p {
+    font-family: var(--font-opens-sans);
+    color: var(--color-grey);
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 90%;
 
 }
