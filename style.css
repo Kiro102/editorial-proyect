@@ -28,6 +28,14 @@ body {
 /* ****ASIDE*** */
 .menu_left {
     display: none;
+    /* display: flex; */
+    flex-direction: column;
+    width: 20%;
+}
+
+.show {
+    display: flex;
+    transition: left 300ms ease-in-out 0ms;
 }
 
 /* ****CONTENEDOR TOTAL */
@@ -60,10 +68,11 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
+    align-items: center;
     border-bottom: 4px solid #f56a6a;
     gap: rem;
     width: 90%;
-    padding: 1rem 0;
+    padding: 1rem 0rem 1rem 0rem;
 }
 
 .link_text_nav {
@@ -106,9 +115,9 @@ body {
 /* ***CONENIDOS DEL HEADER */
 .content_header {
     display: flex;
-    width: 90%;
-    border-bottom: 2px solid var(--color-grey);
-    padding: 6rem 0 8rem 0;
+    width: 100%;
+    border-bottom: .1rem solid var(--color-grey);
+    padding: 6rem 6rem 8rem 6rem;
 
 }
 
@@ -118,7 +127,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    gap: 3rem;
+    width: 100%;
 }
 
 .header_text h1 {
@@ -126,7 +136,7 @@ body {
     font-weight: 600;
     font-size: 4.8rem;
     color: var(--color-black);
-    width: 60%;
+    width: 100%;
     align-self: flex-start;
 }
 
@@ -147,12 +157,19 @@ body {
     width: 90%;
     height: 25%;
     align-self: flex-start;
+    margin: 0 0 2rem 0;
 
 }
 
+
 /* ***IMG DEL HEADER*** */
-.content_header img {
-    width: 55rem;
+.image_header {
+    display: flex;
+    width: 100%;
+}
+
+.image_header img {
+    width: 100%;
     border-radius: 0.5rem;
 }
 
@@ -179,22 +196,23 @@ body {
 /* ***Mainn*** */
 .container_main {
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0 5rem 0;
+    padding: 5rem 6rem 5rem 6rem;
 }
 
 .container_main h2 {
     text-align: left;
     font-family: var(--font-roboto-slab);
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.2rem;
+    font-weight: 500;
     color: var(--color-black);
     border-bottom: 4px solid var(--color-red);
     align-self: flex-start;
-    width: 10%;
+    width: 13%;
+    padding: 0 0 1rem 0;
 }
 
 /* *******SECTION HERO 1**** */
@@ -205,6 +223,7 @@ body {
     /* border: 2px solid blue; */
     flex-wrap: wrap;
     /* height: 100vh; */
+    border-bottom: .1rem solid #7f888f;
 }
 
 /* *******CARD**** */
@@ -250,4 +269,82 @@ body {
     font-weight: 400;
     width: 90%;
 
+}
+
+
+/* ***HERO 2*** */
+.hero_2 {
+    width: 100%;
+    padding: 8rem 0 0 0;
+
+}
+
+.hero_2 h2 {
+    width: 20%;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.images_card_container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.image_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 2rem;
+    /* border-right: .1rem solid var(--color-grey);
+    border-bottom: .1rem solid var(--color-grey); */
+    /* padding: 3rem 2rem 4rem 3rem; */
+    padding: 3rem 0rem 4rem 0rem;
+    position: relative;
+}
+
+/* .image_card:before {
+    background: rgba(210, 215, 217, 0.75);
+    content: '';
+    display: flex;
+    height: (100%);
+    left: 1rem;
+    position: absolute;
+    top: 3rem;
+    width: 2px;
+}
+
+.image_card:after {
+    background: rgba(210, 215, 217, 0.75);
+    bottom: -1rem;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    width: (100%);
+} */
+.card_img {
+    width: 100%;
+}
+
+.card_img img {
+    width: 90%;
+    border-radius: .5rem;
+}
+
+.image_card h3 {
+    font-size: 1.8rem;
+    color: var(--color-black);
+    font-family: var(--font-roboto-slab);
+    align-self: flex-start;
+}
+
+.image_card p {
+    font-family: var(--font-opens-sans);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-grey);
+    /* width: 90%; */
 }
