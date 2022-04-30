@@ -34,7 +34,7 @@ body {
     transition: transform .3s;
     background-color: #f5f6f7;
     padding: 0 2rem 0 2rem;
-    height: 250vh;
+    height: 100%;
     position: sticky;
     left: 0;
     top: 0;
@@ -97,11 +97,7 @@ body {
 
 /* ******menu***** */
 .menu_links {
-    /* display: flex; */
     width: 100%;
-
-
-
 }
 
 .menu_links li {
@@ -202,6 +198,8 @@ body {
     font-family: var(--font-opens-sans);
     font-weight: 300;
     font-size: 1.3rem;
+    color: var(--color-grey);
+    padding: 1rem 0 2rem 0;
 }
 
 .contact_info_ul {
@@ -219,14 +217,13 @@ body {
     border-bottom: .1rem solid #7f888f3d;
 }
 
-
 .contact_info_ul a {
     text-decoration: dashed black;
     font-family: var(--font-opens-sans);
     font-weight: 500;
     color: var(--color-grey);
     font-size: 1.3rem;
-    border-bottom: .1rem dashed #7f888f;
+
 }
 
 .icon_contact_left {
